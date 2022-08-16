@@ -1,0 +1,74 @@
+$mainColor : #0F0F17;
+body{
+  //background-color: $mainColor;
+  color: #fff;
+  background: rgb(23,29,46);
+  background: radial-gradient(circle, rgba(23,29,46,1) 0%, rgba(15,15,23,1) 100%);
+}
+/* header */
+.header{
+  &-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 90%;
+    padding: 0 5%;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 2555, 255,.1);
+  }
+  &-btnWallet{
+    background: none;           
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  &-logo{
+    margin: 0;
+    display: block;
+    width: 189px;
+    height: 14px;
+    background: url(./assets/logo.svg) center no-repeat;
+    font-size: 0;
+  }
+  &-iconWallet{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background: url(./assets/wallet.svg) center no-repeat;
+    background-size: contain;
+    margin: 0 7px 0 0;
+  }
+}
+/* fin  header */
+/* incio hero*/
+.hero{
+  &-wrap{
+    height: calc(95vh - 71px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+  &-genesis{
+    margin: 0 0 35px 5%;
+    height: 28vw;
+  }
+}
+/* fin inicio hero*/
+
+
+/* elementos*/
+
+.mainBtn{
+  background: red;
+  padding: 14px 35px;
+  border-radius: 25px;
+  background: red;
+  border: none;
+  color: $mainColor;
+  background: rgb(183,129,44);
+  background: linear-gradient(24deg, rgba(183,129,44,1) 0%, rgba(126,206,255,1) 100%);
+}
