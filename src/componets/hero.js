@@ -7,6 +7,7 @@ const Hero = ()=>{
         <div className="hero-wrap">
             <img src={genesis} className="hero-genesis"/>
             <MainBtn text={'Ver colecciones'}/>
+            <button></button>
         </div>
     )
 }
