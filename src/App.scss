@@ -51,6 +51,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    position: relative;
   }
   &-genesis{
     margin: 0 0 35px 5%;
@@ -63,7 +64,6 @@ body{
 /* elementos*/
 
 .mainBtn{
-  background: red;
   padding: 14px 35px;
   border-radius: 25px;
   background: red;
@@ -71,4 +71,17 @@ body{
   color: $mainColor;
   background: rgb(183,129,44);
   background: linear-gradient(24deg, rgba(183,129,44,1) 0%, rgba(126,206,255,1) 100%);
+}
+
+.secondBtn{
+  padding: 14px 35px;
+  color: #7ECEFF;
+  background: none;
+  border: 1px solid #7ECEFF;
+  border-radius: 25px;  
+  &--hero{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
 }
