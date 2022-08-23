@@ -12,7 +12,7 @@ const Hero = ({connected,ethBalance})=>{
                 <>
                     <div className="nft-wrap">
                         <div className="nft-wrapImg">
-                            <img src={imageNft}/>
+                            <img src={imageNft} alt="nft"/> 
                         </div>
                         <div className="nft-wrapTxt">
                             <div className="nft-colTxt">

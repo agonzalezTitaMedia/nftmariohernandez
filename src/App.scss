@@ -1,9 +1,28 @@
 $mainColor : #0F0F17;
+
+
+@font-face {
+  font-family: 'Capitanejo-BT';
+  src: url('./fonts/Capitanejo-BT-Regular.eot');
+  src: url('./fonts/Capitanejo-BT-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Capitanejo-BT-Regular.woff2') format('woff2'),
+      url('./fonts/Capitanejo-BT-Regular.woff') format('woff'),
+      url('./fonts/Capitanejo-BT-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html{
+  font-family: 'Capitanejo-BT', serif;
+}
 body{
   //background-color: $mainColor;
   color: #fff;
   background: rgb(23,29,46);
   background: radial-gradient(circle, rgba(23,29,46,1) 0%, rgba(15,15,23,1) 100%);
+  font-family: 'Capitanejo-BT', serif;
 }
 /* header */
 .header{
@@ -23,6 +42,7 @@ body{
     padding: 0;
     margin: 0;
     border: none;
+    font-family: 'Capitanejo-BT', serif;
   }
   &-logo{
     margin: 0;
@@ -97,6 +117,28 @@ body{
   }
 }
 
+/* slides home */
+
+.slide{
+  &-wrap{
+    width: 100%;
+    min-height: 100vh;
+    &--zafiro{
+      display: flex;
+      .slide-col:nth-child(1){
+          width: 60%;
+      }
+      .slide-col:nth-child(2){
+        width: 40%;
+      }
+    }
+  }
+  &-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* elementos*/
 
 .mainBtn{
@@ -107,6 +149,7 @@ body{
   color: $mainColor;
   background: rgb(183,129,44);
   background: linear-gradient(24deg, rgba(183,129,44,1) 0%, rgba(126,206,255,1) 100%);
+  font-family: 'Capitanejo-BT', serif;
 }
 
 .secondBtn{
@@ -115,6 +158,7 @@ body{
   background: none;
   border: 1px solid #7ECEFF;
   border-radius: 25px;  
+  font-family: 'Capitanejo-BT', serif;
   &--hero{
     position: absolute;
     top: 2%;
