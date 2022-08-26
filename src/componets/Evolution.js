@@ -32,7 +32,7 @@ const Evolution = () => {
 
                     <div className="evolution-stepTimeLine">
                         <div className="evolution-wrapTxtTimeLine">
-                            <h4 className="evolution-titleStep"> <span>1</span> Creacion de los nfts</h4>
+                            <h4 className="evolution-titleStep"> <span>3</span> Creacion de los nfts</h4>
                             <p className="evolution-subTitleStep">Optimización de la plataforma de lanzamiento</p>
                             <p className="evolution-textStep">Se crean prepara lanzamiento de la marca en Open Sea</p>
                             <p className="evolution-dateStep">Fecha 00/00/000</p>
@@ -72,7 +72,7 @@ const Evolution = () => {
 
                     <div className="evolution-stepTimeLine evolution-stepTimeLine--right">
                         <div className="evolution-wrapTxtTimeLine">
-                            <h4 className="evolution-titleStep"> <span>2</span> Creacion de los nfts</h4>
+                            <h4 className="evolution-titleStep"> <span>4</span> Creacion de los nfts</h4>
                             <p className="evolution-subTitleStep">Optimización de la plataforma de lanzamiento</p>
                             <p className="evolution-textStep">Se crean prepara lanzamiento de la marca en Open Sea</p>
                             <p className="evolution-dateStep">Fecha 00/00/000</p>

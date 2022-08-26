@@ -271,7 +271,7 @@ body{
     height: auto;
     display: flex;
     align-items: center;
-    margin: 14px 0 0 0;
+    margin: 35px 0 0 0;
   }
   &-circle{
     width: 7px;
@@ -306,6 +306,34 @@ body{
     margin: 0;
     font-size: 12px;
     color: #8A8AA0;
+  }
+}
+
+/* beneficios */
+
+.beneficios{
+  &-wrapCol{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 35px;
+  }
+  &-col{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    .definition-subTitle{
+      margin: 0;
+      text-align: left;
+      font-size: 18px;
+    }
+    .definition-txt{
+      margin: 0;
+      text-align: left  ;
+    }
+  }
+  &-wrapText{
+    margin: 0 0 0 21px;
   }
 }
 /* elementos*/

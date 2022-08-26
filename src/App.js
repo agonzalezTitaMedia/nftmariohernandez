@@ -7,6 +7,7 @@ import Indigo from './componets/Indigo';
 import Cobalto from './componets/Cobalto';
 import Definition from './componets/Definition';
 import Evolution from  './componets/Evolution';
+import Beneficios from './componets/Beneficios';
 
 import './App.scss';
 
@@ -63,6 +64,7 @@ function App() {
     <Cobalto/>
     <Definition/>
     <Evolution/>
+    <Beneficios/>
     </>
   );
 }
