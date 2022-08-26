@@ -122,9 +122,11 @@ body{
 .slide{
   &-wrap{
     width: 100%;
-    min-height: 100vh;
+    min-height: 600px;
     &--zafiro{
       display: flex;
+      width: 90%;
+      margin: auto;
       .slide-col:nth-child(1){
           width: 60%;
       }
@@ -132,11 +134,178 @@ body{
         width: 40%;
       }
     }
+    &--indigo{
+      display: flex;
+      width: 90%;
+      margin: auto;
+      .slide-col:nth-child(1){
+        width: 40%;
+    }
+    .slide-col:nth-child(2){
+      width: 60%;
+    }
+    }
   }
   &-col{
     display: flex;
     align-items: center;
+    justify-content: center ;
+    flex-flow: column;
+  }
+  &-title{
+    font-size: 60px;
+    display: block;
+    background: -webkit-linear-gradient(#B7812C, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+  }
+  &-WrapCircle{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    margin: 28px 0;
+    span{
+      width: 7px;
+      height: 7px;
+      display: block;
+      overflow: hidden;
+      border-radius: 7px;
+      background-color: #E6BB4D;
+    }
+  }
+  &-subTitle{
+    color: #A0A0BA;
+    font-size: 26px;
+
+  }
+  &-txt{
+    font-size: 16px;
+    color: #A0A0BA;
+    margin: 35px 0;
+    text-align: center;
+  }
+  &-wrapSlider{
+    width: 90%;
+    .nft-wrap{
+      height: auto;
+      overflow: hidden;
+    }
+  }
+}
+
+/* definicion */
+.definition{
+  &-wrap{
+    height: 600px;
+  }
+  &-rowTop{
+    max-width: 800px;
+    margin: auto;
+    .mainBtn{
+      margin: auto;
+      display: block;
+    }
+  }
+  &-title{
+    font-size: 40px;
+    text-align: center;
+  }
+  &-txt{
+    text-align: center;
+  }
+  &-wrapColBottom{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 35px auto;
+  }
+  &-subTitle{
+    text-align: center;
+    font-size: 26px;
+    margin: 21px 0;
+  }
+  &-colInfo{
+    padding: 0 14px;
+    .definition-txt{
+      text-align: left;
+    }
+  }
+}
+/* evolition slide */
+
+.evolution{
+  &-wrapTimeLine{
+    display: flex;
     justify-content: center;
+    width: 80%;
+    margin: 21px auto;
+  }
+  &-colTimeLine{
+    width: 49%;
+    &:nth-child(1){
+      border-right: 1px solid #b7812c;;
+    }
+  }
+  &-stepTimeLine{
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 21px 0;
+    &--right{
+      flex-flow: row-reverse;
+      margin: 35px 0 0 0;
+      .evolution-indicatorTimeLine{
+        flex-flow: row-reverse;
+      }
+      .evolution-wrapTxtTimeLine{
+        width: calc(100% - 100px);
+        margin: 0 0 0 23px;
+      }
+    }
+  }
+  &-wrapTxtTimeLine{
+    width: calc(100% - 123px);
+  }
+  &-indicatorTimeLine{
+    width: 123px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 14px 0 0 0;
+  }
+  &-circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background: rgb(183,129,44);
+    background: linear-gradient(43deg, rgba(183,129,44,1) 0%, rgba(126,206,255,1) 100%);
+  }
+  &-line{
+    width: calc(100% - 7px);
+    height: 1px;
+    background: #b7812c;
+  }
+  &-titleStep{
+    margin: 0;
+    font-size: 20px;
+    color: #7ECEFF;
+    font-weight: 300;
+    span{
+      font-size: 40px;
+    }
+  }
+  &-subTitleStep{
+    font-size: 16px;
+    margin: 0;
+  }
+  &-textStep{
+    margin: 0;
+    font-size: 12px;
+  }
+  &-dateStep{
+    margin: 0;
+    font-size: 12px;
+    color: #8A8AA0;
   }
 }
 /* elementos*/

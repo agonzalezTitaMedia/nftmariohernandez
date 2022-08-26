@@ -18,7 +18,6 @@ const Card = () => {
                                 <p className="nft-value">4.89 Eth</p>
                             </div>
                         </div>
-
             </div>
         </>
     )

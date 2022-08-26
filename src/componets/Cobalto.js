@@ -5,7 +5,7 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import Card from "./Card";
 
-const Zafiro = () => {
+const Cobalto = () => {
     
         const settings = {
           dots: false,
@@ -37,7 +37,7 @@ const Zafiro = () => {
                     <span></span>
                     <span></span>
                 </div>
-                <h2 className="slide-title">ZAFIRO</h2>
+                <h2 className="slide-title">COBALTO</h2>
                 <p className="slide-txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. 
                 </p> 
@@ -47,4 +47,4 @@ const Zafiro = () => {
     )
 }
 
-export default Zafiro
+export default Cobalto

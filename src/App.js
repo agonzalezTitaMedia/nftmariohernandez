@@ -3,6 +3,11 @@ import Web3 from 'web3';
 import Header from './componets/header';
 import Hero from './componets/hero';
 import Zafiro from './componets/Zafiro';
+import Indigo from './componets/Indigo';
+import Cobalto from './componets/Cobalto';
+import Definition from './componets/Definition';
+import Evolution from  './componets/Evolution';
+
 import './App.scss';
 
 function App() {
@@ -54,6 +59,10 @@ function App() {
     <Header connected={connected} onConnect={onConnect} disConnect={disConnect}/>
     <Hero connected={connected} ethBalance={ethBalance}/>
     <Zafiro/>
+    <Indigo/>
+    <Cobalto/>
+    <Definition/>
+    <Evolution/>
     </>
   );
 }
