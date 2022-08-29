@@ -198,6 +198,9 @@ body{
 .definition{
   &-wrap{
     height: 600px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
   }
   &-rowTop{
     max-width: 800px;
@@ -336,6 +339,119 @@ body{
     margin: 0 0 0 21px;
   }
 }
+/* pregutas */
+
+.questions{
+  &-wrapMain{
+    width: 80%;
+    margin: 63px auto;
+    display: block;
+  }
+  &-rowQuestions{
+    border-bottom: 1px solid #fff;
+    margin: 0 0 14px 0;
+  }
+  &-topRow{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+  }
+  &-botRow{
+    padding: 0 0 35px 0;
+    display: none;
+  }
+  &-downQuestion{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url(./assets/down-question.svg) center no-repeat;
+  }
+}
+/* footer */
+
+.footer{
+  &-wrap{
+    width: 80%;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-col{
+    width: 32%;
+    &:nth-child(2){
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &:nth-child(3){
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  &-txt{
+    margin: 0;
+  }
+  &-sizeXl{
+    font-size: 26px;
+    padding: 0 0 0 7px;
+  }
+  &-wrapInput{
+    border: 1px solid #fff;
+    display: flex;
+    margin: 35px 0;
+    input{
+      background: none;
+      color: #fff;
+      border: none;
+      width: calc(100% - 53px);
+      padding: 0 7px;
+      border-radius: 0;
+      font-family: 'Capitanejo-BT';
+      &:focus-visible{
+        border: none;
+      }
+    }
+    button{
+      background: none;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &-accept{
+    input{
+      display: inline;
+      width: 16px;
+      height: 16px;
+      background: none;
+    }
+    p{
+      display: inline;
+    }
+  }
+  &-link{
+    display: block;
+  }
+  &-sub{
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  &-name{
+    width: 100%;
+    padding: 21px 0;
+    background:#343444;
+    text-align: center;
+  }
+  
+}
+
 /* elementos*/
 
 .mainBtn{

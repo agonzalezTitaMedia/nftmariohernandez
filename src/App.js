@@ -8,8 +8,10 @@ import Cobalto from './componets/Cobalto';
 import Definition from './componets/Definition';
 import Evolution from  './componets/Evolution';
 import Beneficios from './componets/Beneficios';
+import Questions from './componets/Questions';
 
 import './App.scss';
+import Footer from './componets/Footer';
 
 function App() {
   const [connected, setConnected] = useState(false);
@@ -65,6 +67,8 @@ function App() {
     <Definition/>
     <Evolution/>
     <Beneficios/>
+    <Questions/>
+    <Footer/>
     </>
   );
 }
