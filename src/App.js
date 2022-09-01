@@ -9,6 +9,7 @@ import Definition from './componets/Definition';
 import Evolution from  './componets/Evolution';
 import Beneficios from './componets/Beneficios';
 import Questions from './componets/Questions';
+import Menu from './componets/Menu';
 
 import './App.scss';
 import Footer from './componets/Footer';
@@ -59,6 +60,7 @@ function App() {
 
   return (
     <>
+    <Menu />
     <Header connected={connected} onConnect={onConnect} disConnect={disConnect}/>
     <Hero connected={connected} ethBalance={ethBalance}/>
     <Zafiro/>

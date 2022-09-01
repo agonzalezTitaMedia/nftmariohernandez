@@ -9,14 +9,11 @@ import Card from "./Card";
 const Indigo = () =>{
 
     const settings = {
-        dots: false,
-        infinite: true,
-        speed: 100,
-        slidesToShow: 1.5,
-        slidesToScroll: 1,
-        autoplay:true,
-        centermode:true,
-        arrows:false
+        centerMode: true,
+            centerPadding: '60px',
+            autoplay:true,    
+            slidesToShow: 1.6,
+            arrows:false
       };
 
 
@@ -38,6 +35,9 @@ const Indigo = () =>{
             </div>
             <div className="slide-col">
                     <Slider {...settings} className="slide-wrapSlider">
+                        <div>
+                            <Card />
+                        </div>
                         <div>
                             <Card />
                         </div>
