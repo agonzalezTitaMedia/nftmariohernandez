@@ -23,6 +23,7 @@ body{
   background: rgb(23,29,46);
   background: radial-gradient(circle, rgba(23,29,46,1) 0%, rgba(15,15,23,1) 100%);
   font-family: 'Capitanejo-BT', serif;
+  margin: 0;
 }
 /* header */
 .header{
@@ -76,6 +77,9 @@ body{
   &-genesis{
     margin: 0 0 35px 5%;
     height: 27vw;
+  }
+  &-scroll{
+    margin: 42px 0;
   }
 }
 /* fin inicio hero*/
@@ -133,7 +137,9 @@ body{
     &--zafiro{
       display: flex;
       width: 90%;
+      padding: 0 5%;
       margin: auto;
+      background: #121225;
       .slide-col:nth-child(1){
           width: 60%;
       }
@@ -212,10 +218,16 @@ body{
   &-rowTop{
     max-width: 800px;
     margin: auto;
+    position: relative;
     .mainBtn{
       margin: auto;
       display: block;
     }
+  }
+  &-butterfly{
+    position: absolute;
+    top: -18%;
+    left: 20%;
   }
   &-title{
     font-size: 40px;
@@ -245,6 +257,10 @@ body{
 /* evolition slide */
 
 .evolution{
+  &-mainWrap{
+    background: #111125;
+    padding: 42px 0;
+  }
   &-wrapTimeLine{
     display: flex;
     justify-content: center;
@@ -372,11 +388,12 @@ body{
       width: 15px;
       height: 15px;
       background: url(./assets/down-question.svg) center no-repeat;
+    }
   }
-}
 /* footer */
 footer{
   background: #14141F;
+  padding: 42px 0 0 0;
 }
 .footer{
   &-wrap{

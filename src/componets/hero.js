@@ -2,6 +2,7 @@ import React from "react";
 import genesis from "../assets/genesis.png"
 import MainBtn from "./MainBtn";
 import imageNft from "../assets/example-nft.jpg"
+import ScrollDown from "../assets/scroll-down.svg"
 
 const Hero = ({connected,ethBalance})=>{
     return(
@@ -34,6 +35,7 @@ const Hero = ({connected,ethBalance})=>{
                     <>
                         <img src={genesis} className="hero-genesis"/>
                             <MainBtn text={'Ver colecciones'}/>
+                        <img src={ScrollDown} className="hero-scroll"/>
                     </>
                 )
             }

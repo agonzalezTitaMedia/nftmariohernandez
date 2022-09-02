@@ -3,7 +3,7 @@ import React from "react";
 
 const Evolution = () => {
     return(
-        <>
+        <div className="evolution-mainWrap">
             <h3 className="definition-title">Evolución de tu inversión en NFT´s</h3>
             <p className="definition-txt">Un nft funciona como un activo financiero que se transa en el mercado por lo que su precio sube de acuerdo a la demanda</p>
             <div className="evolution-wrapTimeLine">
@@ -90,7 +90,7 @@ const Evolution = () => {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }
 
