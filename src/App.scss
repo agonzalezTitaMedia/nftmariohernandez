@@ -378,10 +378,14 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 7px 0;
+    cursor: pointer;
   }
   &-botRow{
     padding: 0 0 35px 0;
     display: none;
+    &.show{
+      display: block;
+    }
   }
   &-downQuestion{
       display: block;
