@@ -1,5 +1,6 @@
 import { useState,  useEffect } from 'react';
 import Web3 from 'web3';
+
 import Header from './componets/header';
 import Hero from './componets/hero';
 import Zafiro from './componets/Zafiro';
