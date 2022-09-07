@@ -29,9 +29,17 @@ const Hero = ({connected,ethBalance,listNft})=>{
 
                     </div>
                     <p>saldo Eth: {ethBalance}</p>
+                    <p>Tus Nfts :</p>
                     {listNft.map((data,index)=>{
+                      var idLast =  data.slice(-1)
                         return(
-                            <div key={index}>{data}</div>
+                            <a 
+                            key={index}
+                            target="_blank"
+                            href={'https://testnets.opensea.io/assets/rinkeby/0x12f03749c6b06d6751e3c41a51c60d685ad40056/' +  idLast}
+                            >
+                                {idLast}
+                            </a>
                         )
                     })}
                     <p></p>

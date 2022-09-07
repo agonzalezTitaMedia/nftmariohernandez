@@ -77,6 +77,7 @@ function App() {
           //owner: '0x7F9691fAa9D935b5B55e3ac4E3399161e7ab37F6',
           owner: address,
           'contractAddresses[]': '0x12f03749c6b06d6751e3c41a51c60d685ad40056',
+          //'contractAddresses[]': '0x25f37057cdc1538dad98799ec680682336640e58',
           withMetadata: 'false'
         },
         headers: {Accept: 'application/json'}
