@@ -1,40 +1,12 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 import genesis from "../assets/genesis.png"
 import MainBtn from "./MainBtn";
 import imageNft from "../assets/example-nft.jpg"
 import ScrollDown from "../assets/scroll-down.svg"
 
-const Hero = ({connected,ethBalance})=>{
-
-    const [ dataNft, setDataNft] = useState()
+const Hero = ({connected,ethBalance,listNft})=>{
     
-    const options = {
-        method: 'GET',
-        url: 'https://eth-rinkeby.g.alchemy.com/nft/v2/vbBcAkWkcLUdBfrN1GJmyAkWxc7_O9_c/getNFTs',
-        params: {
-          owner: '0x7F9691fAa9D935b5B55e3ac4E3399161e7ab37F6',
-          'contractAddresses[]': '0x12f03749c6b06d6751e3c41a51c60d685ad40056',
-          withMetadata: 'true'
-        },
-        headers: {Accept: 'application/json'}
-      };
-      
-      axios 
-        .request(options)
-        .then(function (response) {
-          console.log(response.data.ownedNfts);
-            
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
-
-
-        
-
-
     return(
         <div className="hero-wrap">
             
@@ -57,7 +29,14 @@ const Hero = ({connected,ethBalance})=>{
 
                     </div>
                     <p>saldo Eth: {ethBalance}</p>
-                
+                    {listNft.map((data,index)=>{
+                        return(
+                            <div key={index}>{data}</div>
+                        )
+                    })}
+                    <p></p>
+
+                     
                 </>
             )
                 
