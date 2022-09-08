@@ -95,7 +95,7 @@ function App() {
           listPass.push(element.id.tokenId)
         } );
         console.log(listPass)
-        setListNft(listPass);
+        setListNft(listPass); 
 
       })
       .catch(function (error) {
